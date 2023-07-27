@@ -1,0 +1,15 @@
+<div>
+    <h1 class="text-4xl"><span class="uppercase">à</span> propos</h1>
+    <section class="border rounded-md mt-4 border-lime-600 p-3">
+    <h1 class="p-3">Github</h1>
+
+    <div class="grid grid-cols-2 gap-6">
+        <%= for repo <- @repos do %>
+        <%= live_component @socket, PrummefolioWeb.Components.Card.RepoGithub, id: repo,
+            link: repo["html_url"], name: repo["name"], description: repo["description"]
+         %>
+
+        <% end %>
+    </div>
+    </section>
+</div>

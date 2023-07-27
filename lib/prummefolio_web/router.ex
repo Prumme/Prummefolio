@@ -19,7 +19,9 @@ defmodule PrummefolioWeb.Router do
 
     get "/", PageController, :home
 
-    get "/about", PageController, :about
+    live "/about", AboutLive, :index
+
+    live "/stacks", StackLive, :index
   end
 
   # Other scopes may use custom stacks.

@@ -1,0 +1,12 @@
+<div>
+    <h1>Les Stacks utilisées sur Prummefolio</h1>
+
+    <div class="grid grid-cols-2 gap-12">
+
+        <%= for stack <- @stacks do %>
+
+        <%= live_component PrummefolioWeb.Components.Card.Flipping, id: stack.title, stack: stack %>
+
+        <% end %>
+    </div>
+</div>
