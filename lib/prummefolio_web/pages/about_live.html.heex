@@ -5,7 +5,8 @@
 
     <div class="grid grid-cols-2 gap-6">
         <%= for repo <- @repos do %>
-        <%= live_component @socket, PrummefolioWeb.Components.Card.RepoGithub, id: repo,
+
+        <%= live_component PrummefolioWeb.Components.Card.RepoGithub, id: repo,
             link: repo["html_url"], name: repo["name"], description: repo["description"]
          %>
 
