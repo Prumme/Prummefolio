@@ -110,6 +110,9 @@ jobs:
       - name: Check Formatting
         run: mix format --check-formatted
 
+      - name: Display Database Configuration
+        run: cat config/test.exs
+
       # Step: Execute the tests.
       - name: Run tests
         run: mix test
