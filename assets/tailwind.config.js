@@ -6,12 +6,23 @@ const fs = require("fs");
 const path = require("path");
 
 module.exports = {
+  darkMode: "class",
   content: ["./js/**/*.js", "../lib/*_web.ex", "../lib/*_web/**/*.*ex"],
   theme: {
     extend: {
       colors: {
         brand: "#FD4F00",
       },
+      // keyframes: {
+      //   ping: {
+      //     "100%": {
+      //       transform: scale(2),
+      //       opacity: 0
+      //     }
+      // },
+      // animation: {
+      //   "ping": "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
+      // },
     },
   },
   plugins: [

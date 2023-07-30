@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="[scrollbar-gutter:stable]">
+<html
+  lang="fr"
+  class={"[scrollbar-gutter:stable] " <> if Map.has_key?(assigns[:conn].cookies, :darkmode) do assigns[:conn].cookies.darkmode else "" end}
+>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

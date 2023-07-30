@@ -6,4 +6,9 @@ defmodule PrummefolioWeb.PageController do
     # so skip the default app layout.
     render(conn, :home)
   end
+
+  def handle_event("click", _params, socket) do
+    IO.inspect("test")
+    {:noreply, socket}
+  end
 end
