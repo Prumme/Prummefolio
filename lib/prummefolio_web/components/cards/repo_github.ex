@@ -21,8 +21,12 @@ defmodule PrummefolioWeb.Components.Card.RepoGithub do
               />
             </div>
             <div>
-              <h2 class="mt-2 text-3xl font-bold text-center text-gray-800 dark:text-white"><%= unslugify(@name) %></h2>
-              <p class="mt-2 text-sm text-gray-600 dark:text-white text-center"><%= @description %></p>
+              <h2 class="mt-2 text-3xl font-bold text-center text-gray-800 dark:text-white">
+                <%= unslugify(@name) %>
+              </h2>
+              <p class="mt-2 text-sm text-gray-600 dark:text-white text-center">
+                <%= @description %>
+              </p>
             </div>
             <div class="flex justify-center mt-4">
               <%= link to: @link, class: "px-4 py-2 text-sm font-medium text-white dark:bg-white bg-gray-700 rounded dark:text-slate-700 hover:bg-gray-500 duration-300" do %>

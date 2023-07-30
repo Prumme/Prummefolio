@@ -2,20 +2,17 @@ defmodule PrummefolioWeb.Components.Utils.Theme do
   use PrummefolioWeb, :live_component
   use Phoenix.HTML
 
-
   def mount() do
-
   end
 
   def render(assigns) do
     ~H"""
     <div>
-    test
+      test
     </div>
     """
   end
 end
-
 
 # <div>
 #     <%= if false do %>
