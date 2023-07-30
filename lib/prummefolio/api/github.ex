@@ -14,13 +14,14 @@ defmodule Prummefolio.Api.GitHub do
   end
 
   def process_response_body(body) do
-    body = body |> Poison.decode!
+    body = body |> Poison.decode!()
+
     if is_list(body) do
       body
     else
       body
       |> Map.take(@expected_fields)
-      |> Enum.map(fn({k, v}) -> {String.to_atom(k), v} end)
+      |> Enum.map(fn {k, v} -> {String.to_atom(k), v} end)
     end
   end
 
