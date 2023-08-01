@@ -1,7 +1,7 @@
 name: Fly Deploy
 on:
-  push:
-    branches: ["prod"] # adapt branch for project
+  # push:
+  #   branches: ["prod"] # adapt branch for project
   pull_request:
     branches: ["prod"] # adapt branch for project
 
