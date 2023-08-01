@@ -7,7 +7,7 @@ defmodule PrummefolioWeb.Components.Card.RepoGithub do
 
   def render(assigns) do
     ~H"""
-    <div class="relative group hover:scale-105 transition duration-300">
+    <div class="relative group hover:scale-105 transition duration-300 h-52">
       <div class="absolute -inset-1.5 bg-gradient-to-bl from-purple-600 via-red-400 to-orange-300 opacity-75 group-hover:opacity-100 rounded-lg blur transition duration-300 ">
       </div>
       <article class="relative min-w-full min-h-full dark:bg-slate-700 bg-white rounded-lg">
@@ -28,9 +28,9 @@ defmodule PrummefolioWeb.Components.Card.RepoGithub do
                 <%= @description %>
               </p>
             </div>
-            <div class="flex justify-center mt-4">
+            <div class="flex justify-center mt-4 absolute inset-x-0 bottom-6 ">
               <%= link to: @link, class: "px-4 py-2 text-sm font-medium text-white dark:bg-white bg-gray-700 rounded dark:text-slate-700 hover:bg-gray-500 duration-300" do %>
-                View
+                Aller sur le repo
               <% end %>
             </div>
           </div>
