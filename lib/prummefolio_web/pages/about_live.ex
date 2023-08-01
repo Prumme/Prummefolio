@@ -12,7 +12,6 @@ defmodule PrummefolioWeb.AboutLive do
         |> assign(:repos, [])
         |> put_flash(:error, "Error fetching repos")
       else
-
         socket
         |> assign(:repos, response.body |> Enum.sort_by(& &1["created_at"]) |> Enum.slice(-5, 4))
       end

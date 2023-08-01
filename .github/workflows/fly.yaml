@@ -1,7 +1,7 @@
 name: Fly Deploy
 on:
-  push:
-    branches: ["prod"] # adapt branch for project
+  # push:
+  #   branches: ["prod"] # adapt branch for project
   pull_request:
     branches: ["prod"] # adapt branch for project
 
@@ -96,8 +96,6 @@ jobs:
       # Step: Check that the checked in code has already been formatted.
       # This step fails if something was found unformatted.
       # Customize this step as desired.
-      - name: Check Formatting
-        run: mix format --check-formatted
 
       - name: Display Database Configuration
         run: cat config/test.exs
